@@ -69,9 +69,6 @@ If you see "cannot execute binary file", make sure you're on a Linux/Ubuntu syst
 
 After you download, follow the installation process displayed by the program.
 
-## Educational Purpose
-
-This tool is designed for educational purposes to demonstrate ransomware behavior in a controlled environment. Use responsibly and only in authorized testing environments.
 
 ## Support
 
