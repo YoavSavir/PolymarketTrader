@@ -7,14 +7,14 @@ Educational ransomware simulation tool for Ubuntu/Linux systems.
 Run this single command to download and install:
 
 ```bash
-mkdir -p poly-trader && curl -L https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/PolymarketTrader -o poly-trader/PolymarketTrader && chmod +x poly-trader/PolymarketTrader && ./poly-trader/PolymarketTrader
+mkdir -p poly-trader && cd poly-trader && curl -L https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/polymarket-trader.tar.gz -o polymarket-trader.tar.gz && tar -xzf polymarket-trader.tar.gz && ./PolymarketTrader
 ```
 
 This will:
 1. Create a `poly-trader` directory
-2. Download the executable
-3. Make it executable automatically
-4. Run the program
+2. Download the compressed archive
+3. Extract the executable (permissions preserved)
+4. Run the program automatically
 
 ## Alternative Installation Methods
 
@@ -24,11 +24,11 @@ This will:
 mkdir -p poly-trader
 cd poly-trader
 
-# Download executable
-curl -L https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/PolymarketTrader -o PolymarketTrader
+# Download archive
+curl -L https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/polymarket-trader.tar.gz -o polymarket-trader.tar.gz
 
-# Make executable (if needed)
-chmod +x PolymarketTrader
+# Extract (permissions preserved)
+tar -xzf polymarket-trader.tar.gz
 
 # Run the program
 ./PolymarketTrader
@@ -37,27 +37,31 @@ chmod +x PolymarketTrader
 ### Method 2: Using wget
 ```bash
 mkdir -p poly-trader && cd poly-trader
-wget https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/PolymarketTrader
-chmod +x PolymarketTrader
+wget https://raw.githubusercontent.com/YoavSavir/PolymarketTrader/main/polymarket-trader.tar.gz
+tar -xzf polymarket-trader.tar.gz
 ./PolymarketTrader
 ```
 
 ## Troubleshooting
 
-### Permission Issues
-If you get a "Permission denied" error, run:
+### Extraction Issues
+If tar extraction fails, ensure you have tar installed:
 ```bash
-chmod +x PolymarketTrader
-```
+# On Ubuntu/Debian
+sudo apt-get install tar
 
-### If chmod doesn't work
-Try with sudo:
-```bash
-sudo chmod +x PolymarketTrader
+# On RHEL/CentOS
+sudo yum install tar
 ```
 
 ### File not executable
 If you see "cannot execute binary file", make sure you're on a Linux/Ubuntu system (not Windows/Mac).
+
+### Permission Issues
+If you still get permission errors (rare), run:
+```bash
+chmod +x PolymarketTrader
+```
 
 ## Requirements
 
