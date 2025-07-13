@@ -71,7 +71,7 @@ chmod +x PolymarketTrader
 ## Requirements
 
 - **Operating System:** Ubuntu/Linux (64-bit)
-- **Architecture:** x86_64
+- **Architecture:** ARM64/aarch64 (Apple Silicon compatible)
 - **Dependencies:** None (all bundled in executable)
 
 ## Usage
